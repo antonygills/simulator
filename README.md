@@ -108,13 +108,13 @@ Historical weather data between 2009 and 2016 (both years inclusive) for 3 locat
 After execution of the program, the forecasted weather data will be generated as a text file in the path as in [EnvironmentSimulator.properties](/environment-simulator/src/main/resources/properties/EnvironmentSimulator.properties)
 
 Format of data in the output file : 
-- **location|latitude,longitude,elevation|date_time|conditions|temperature|pressure|humidity**
+- *location|latitude,longitude,elevation|date_time|conditions|temperature|pressure|humidity*
 
 ###### Sample output
 
--  **Sydney|-33.52,151.13,58|2017-08-30 10:23:27|Warm|16.8|53.2|1016**
--  **Melbourne|-37.49,144.58,25|2017-08-30 10:23:27|Rain|11.1|70.4|1018**
--  **Adelaide|-34.56,138.36,59|2017-08-30 10:23:27|Rain|16.7|61.3|1014**
+-  *Sydney|-33.52,151.13,58|2017-08-30 10:23:27|Warm|16.8|53.2|1016*
+-  *Melbourne|-37.49,144.58,25|2017-08-30 10:23:27|Rain|11.1|70.4|1018*
+-  *Adelaide|-34.56,138.36,59|2017-08-30 10:23:27|Rain|16.7|61.3|1014*
 
 Logs will be generated in a text file named '*log4j-application.log*' in the directory '*/log*' which will be in the same path as the executable jar. Log4j properties can be edited [log4j.properties](environment-simulator/src/main/resources/log4j.properties).
 
@@ -122,7 +122,15 @@ Logs will be generated in a text file named '*log4j-application.log*' in the dir
 ## References
 #### TestCases:
 
-JUnit test cases are available in the path ["/src/test/java/com/cba/simulator"](environment-simulator/src/test/java/com/cba/simulator), which would run on build using Maven.
+- DbUnit tests.
+- JUnit success tests.
+- JUnit failure tests.
+- JUnit parameterized tests.
+
+
+DbUnit test cases are available in the path ["/src/test/java/com/cba/simulator/dbunit"](environment-simulator/src/test/java/com/cba/simulator/dbunit).</br>
+JUnit test cases are available in the path ["/src/test/java/com/cba/simulator/junit"](environment-simulator/src/test/java/com/cba/simulator/junit).</br>
+All the test cases will run on build using Maven if not skipped.
 
 #### Documentation:
 
