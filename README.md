@@ -81,13 +81,13 @@ This module works in 3 modes :
 Configurable properties like output file path, database setup etc. are stored in [EnvironmentSimulator.properties](/environment-simulator/src/main/resources/properties/EnvironmentSimulator.properties) file.
 Make necessary changes and place the file in the same path as the executable jar.
 
-#### Execution Commands
+#### Sample Execution Commands
 
 ![alt text](environment-simulator/src/main/resources/images/run_no_args.png)
 ![alt text](environment-simulator/src/main/resources/images/run_one_args.png)
 ![alt text](environment-simulator/src/main/resources/images/run_two_args.png)
 
-Note : The date format should be yyyy-MM-dd, for eg: 2017-08-28.
+Note : The date format should be yyyy-MM-dd (eg: 2017-08-28) & dates should be future dates.
 
 ###### Main class
 
