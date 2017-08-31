@@ -31,6 +31,7 @@ public class ErrorConstants {
 	public static final String UTILS_FILE_CLOSE_FAILED = "Unable to flush/close file resources.";
 	public static final String UTILS_FILE_WRITE_FAILED = "Unable to write data to file.";
 	public static final String UTILS_UNABLE_FIND_FILE_PATH = "Unable to find the specified path/file.";
+	public static final String UTILS_UNABLE_FIND_PROP_FILE = "Unable to find the external property file at base path.";
 	
 
 	public static final String BUSINESS_INVALIDARGS = "Invalid input arguments";

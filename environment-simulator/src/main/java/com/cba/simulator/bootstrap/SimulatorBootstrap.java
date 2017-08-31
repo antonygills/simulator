@@ -21,7 +21,6 @@ import com.cba.simulator.dataobject.SimulatorInputDTO;
 import com.cba.simulator.exception.BusinessException;
 import com.cba.simulator.exception.UtilsException;
 import com.cba.simulator.util.DateUtils;
-import com.cba.simulator.util.FileUtils;
 
 /**
  * Acts as triggering point of SimulatorBootstrap.

@@ -77,7 +77,7 @@ public class AppConstants {
 			DATABASE_PASSWORD = prop.getProperty("db.mysql.password");
 
 		} catch (FileNotFoundException e) {
-			throw new UtilsException(ErrorConstants.UTILS_UNABLE_FIND_FILE_PATH);
+			throw new UtilsException(ErrorConstants.UTILS_UNABLE_FIND_PROP_FILE);
 		} catch (IOException e) {
 			throw new UtilsException(ErrorConstants.UTILS_PROP_FILE_LOAD_FAILED);
 		} catch (Exception e) {

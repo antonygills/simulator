@@ -16,6 +16,7 @@ import org.dbunit.util.fileloader.FlatXmlDataFileLoader;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import com.cba.simulator.constant.AppConstants;
 import com.cba.simulator.databaseservice.DataReadService;
 import com.cba.simulator.dataobject.EnvironmentDetailsDO;
 import com.cba.simulator.exception.DAOException;
@@ -29,8 +30,9 @@ public class TestDataReadService extends DatabaseTestCase {
 	/** Provide a connection to the database. */
 	@Override
 	protected IDatabaseConnection getConnection() throws Exception {
-		Class.forName("com.mysql.jdbc.Driver");
-		jdbcConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/weather", "root", "password");
+		AppConstants.loadExternalProperties(AppConstants.EXTERNAL_PROPERTY_FILE);
+		Class.forName(AppConstants.DATABASE_DRIVER);
+		jdbcConnection = DriverManager.getConnection(AppConstants.DATABASE_URL, AppConstants.DATABASE_USERNAME, AppConstants.DATABASE_PASSWORD);
 		return new DatabaseConnection(jdbcConnection);
 	}
 
