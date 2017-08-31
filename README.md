@@ -78,7 +78,7 @@ This module works in 3 modes :
 
 #### Input properties
 
-Configurable properties like output file path, database setup etc. are stored in [EnvironmentSimulator.properties](/environment-simulator/src/main/resources/properties/EnvironmentSimulator.properties) file.
+Configurable properties like output file path, database setup etc. are stored in [EnvironmentSimulator.properties](environment-simulator/EnvironmentSimulator.properties) file.
 Make necessary changes and place the file in the same path as the executable jar.
 
 #### Sample Execution Commands
@@ -105,7 +105,7 @@ Historical weather data between 2009 and 2016 (both years inclusive) for 3 locat
 
 #### Forecast Result
 
-After execution of the program, the forecasted weather data will be generated as a text file in the path as in [EnvironmentSimulator.properties](/environment-simulator/src/main/resources/properties/EnvironmentSimulator.properties)
+After execution of the program, the forecasted weather data will be generated as a text file in the path as in [EnvironmentSimulator.properties](environment-simulator/EnvironmentSimulator.properties)
 
 Format of data in the output file : 
 - *location|latitude,longitude,elevation|date_time|conditions|temperature|pressure|humidity*
